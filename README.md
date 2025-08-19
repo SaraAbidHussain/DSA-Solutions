@@ -14,19 +14,19 @@ This is where I upload my practice solutions to various DSA problems, covering e
 ---
 
 ## 🗂️ Repository Structure  
-📁 DSA-Solutions
-┣ 📂 Arrays
-┣ 📂 Strings
-┣ 📂 Searching
-┣ 📂 Sorting
-┣ 📂 LinkedList
-┣ 📂 Stack
-┣ 📂 Queue
-┣ 📂 Trees
-┣ 📂 Graphs
-┣ 📂 DynamicProgramming
-┣ 📂 Miscellaneous
-┗ 📄 README.md
+📁 DSA-Solutions<br>
+┣ 📂 Arrays<br>
+┣ 📂 Strings<br>
+┣ 📂 Searching<br>
+┣ 📂 Sorting<br>
+┣ 📂 LinkedList<br>
+┣ 📂 Stack<br>
+┣ 📂 Queue<br>
+┣ 📂 Trees<br>
+┣ 📂 Graphs<br>
+┣ 📂 DynamicProgramming<br>
+┣ 📂 Miscellaneous<br>
+┗ 📄 README.md<br>
 
 ---
 
@@ -42,8 +42,8 @@ This is where I upload my practice solutions to various DSA problems, covering e
    ```bash
    git clone https://github.com/your-username/DSA-Solutions.git
    ```
-2.Navigate to the desired topic folder.
-3.Run the code using your preferred compiler.
+2.Navigate to the desired topic folder.<br>
+3.Run the code using your preferred compiler.<br>
 
 ---
 
@@ -57,7 +57,7 @@ This repository is mainly for my personal practice, but if you spot an improveme
 
 If you’re also on a DSA journey, let’s connect and learn together!
 
-GitHub: SaraAbidHussain
+GitHub: [SaraAbidHussain](https://github.com/SaraAbidHussain)<br>
 Gmail: saraabidhussain12@gmail.com
 
 ## ⭐ If you find this repository useful, don’t forget to star it!
