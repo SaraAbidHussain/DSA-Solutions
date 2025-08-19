@@ -1,0 +1,25 @@
+// link : https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+class Solution {
+  public:
+    pair<int, int> getMinMax(vector<int> arr) {
+        // code here
+        int max = INT_MIN;
+        int min = INT_MAX;
+        if(arr.empty())
+        {
+            return {0,0};
+        }
+        for(int i = 0; i < arr.size(); i++)
+        {
+            if (arr[i] > max)
+            {
+                max = arr[i];
+            }
+            if (arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+        return {min,max};
+    }
+};
