@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.size() <=2)
+        {
+            return nums.size();
+        }
+        int P1 = 2;
+        for(int P2 = 2; P2 < nums.size(); P2++)
+        {
+            if(nums[P2] != nums[P1 - 2])
+            {
+                nums[P1] = nums[P2];
+                P1++;
+            }
+
+        }
+        return P1;
+    }
+};
