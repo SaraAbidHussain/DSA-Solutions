@@ -1,0 +1,46 @@
+//Problem Link: https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1
+class Solution {
+  public:
+    // arr : given array
+    // k : find kth smallest element and return using this function
+    int partition(vector<int>&arr, int start,int end)
+    {
+        int idx = start-1; int pivot = arr[end];
+        for(int i = start; i < end; i++)
+        {
+            if(arr[i] <= pivot)
+            {
+                idx++; 
+                swap(arr[i], arr[idx]);
+            }
+        }
+        idx++; 
+        swap(arr[idx], arr[end]);
+        return idx; 
+    }
+    int quickSort(vector<int>&arr, int start, int end,int k)
+    {
+        if(start < end)
+        {
+            int pivIdx = partition(arr,start,end);
+            if(pivIdx == k - 1)
+            {
+                return arr[pivIdx]; // bcz pivIdx comes to its correct place first
+            }
+            else if(pivIdx > k-1)
+            {
+                return quickSort(arr,start, pivIdx-1,k);
+            }
+            else
+            {
+               return quickSort(arr, pivIdx + 1, end,k);
+            }
+        }
+    }
+    int kthSmallest(vector<int> &arr, int k) {
+        // code here
+        quickSort(arr,0, arr.size()-1, k);
+        return arr[k-1];
+        
+    }
+};
